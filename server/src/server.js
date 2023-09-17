@@ -1,4 +1,4 @@
-//using the prebuilt node http server
+//using the prebuilt node http server for separation concerns
 const http = require("http");
 const app = require("./app.js");
 
