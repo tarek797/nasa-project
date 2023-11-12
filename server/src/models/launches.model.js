@@ -1,3 +1,5 @@
+//const launches = require("./launches.mongo");
+
 const launches = new Map();
 
 let latestFlightNumber = 100;
@@ -40,7 +42,7 @@ function abortLaunchById(launchId) {
   const aborted = launches.get(launchId);
   aborted.upcoming = false;
   aborted.success = false;
-  return aborted
+  return aborted;
 }
 
 module.exports = {
